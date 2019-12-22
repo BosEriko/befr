@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+require 'befr'
 
 class Befr
   def self.hi
