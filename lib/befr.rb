@@ -5,3 +5,5 @@ class Befr
     puts "Hello world!"
   end
 end
+
+puts "Personal CLI"
