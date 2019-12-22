@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-class BEFR 
+class Befr
   def self.hi
     puts "Hello world!"
   end
