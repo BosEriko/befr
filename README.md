@@ -11,7 +11,7 @@ gem build befr.gemspec
 ## Install the gem
 
 ```
-gem install ./BEFR-0.0.0.gem
+gem install ./befr-0.0.0.gem
 ```
 
 ## Log in to RubyGems
@@ -24,7 +24,13 @@ curl -u qrush https://rubygems.org/api/v1/api_key.yaml >
 ## Push the gem to RubyGems
 
 ```
-gem push ./BEFR-0.0.0.gem
+gem push ./befr-0.0.0.gem
+```
+
+## Delete a gem on RubyGems
+
+```
+gem yank befr -v 0.0.0
 ```
 
 ## Reference
