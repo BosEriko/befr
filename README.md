@@ -21,6 +21,12 @@ curl -u qrush https://rubygems.org/api/v1/api_key.yaml >
 ~/.gem/credentials; chmod 0600 ~/.gem/credentials
 ```
 
+## Push the gem to RubyGems
+
+```
+gem push ./BEFR-0.0.0.gem
+```
+
 ## Reference
 
 - https://guides.rubygems.org/make-your-own-gem/
