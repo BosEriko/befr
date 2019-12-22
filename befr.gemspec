@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'befr'
-  s.version     = '0.0.3'
+  s.version     = '0.0.4'
   s.date        = '2019-12-22'
   s.summary     = "Bos Eriko's personal CLI"
   s.description = "We need to make life easier! That's what programmers do, right?"
