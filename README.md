@@ -1,3 +1,5 @@
+[![Gem Version](https://badge.fury.io/rb/befr.svg)](https://badge.fury.io/rb/befr)
+
 # befr
 
 Bos Eriko's personal CLI made using Ruby.
