@@ -1,4 +1,4 @@
-require "optparse"
+require 'optparse'
 
 class Befr
   def self.hello
@@ -13,7 +13,7 @@ class Befr
 end
 
 parser = OptionParser.new do |opts|
-  opts.banner = "Usage: backpack [options]"
+  opts.banner = "El Psy Congroo"
 
   opts.on("-H", "--hello", "Print Hello") do
     Befr::hello
