@@ -25,5 +25,4 @@ parser = OptionParser.new do |opts|
 end
 
 parser.parse!
-
 puts parser
