@@ -10,6 +10,12 @@ class Befr
     system "parrotsay"
     exit
   end
+
+  def self.generateconfig
+    system "sh ~/dotfiles/generate.sh"
+    system "source ~/.zshrc"
+    exit
+  end
 end
 
 parser = OptionParser.new do |opts|
@@ -21,6 +27,10 @@ parser = OptionParser.new do |opts|
 
   opts.on("--parrot-say", "Parrot Say") do
     Befr::parrotsay
+  end
+
+  opts.on("-g", "--generate-config", "Generate .zshrc, .tmux.conf and init.vim") do
+    Befr::generateconfig
   end
 
   # opts.on("-H", "--parrot-party", "Party Parrot") do
