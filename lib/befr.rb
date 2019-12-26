@@ -1,13 +1,13 @@
 require 'optparse'
 
 class Befr
-  def self.hello
-    puts "hello"
+  def self.parrotparty
+    system "curl parrot.live"
     exit
   end
 
-  def self.world 
-    puts "world"
+  def self.parrotsay
+    system "parrotsay"
     exit
   end
 end
@@ -15,13 +15,17 @@ end
 parser = OptionParser.new do |opts|
   opts.banner = "El Psy Congroo"
 
-  opts.on("-H", "--hello", "Print Hello") do
-    Befr::hello
+  opts.on("--parrot-party", "Party Parrot") do
+    Befr::parrotparty
   end
 
-  opts.on("-W", "--world", "Print World") do
-    Befr::world
+  opts.on("--parrot-say", "Parrot Say") do
+    Befr::parrotsay
   end
+
+  # opts.on("-H", "--parrot-party", "Party Parrot") do
+    # Befr::parrotdance
+  # end
 end
 
 parser.parse!
