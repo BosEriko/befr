@@ -1,41 +1,34 @@
 require 'optparse'
 
-class Befr
-  def self.parrotparty
-    system "curl parrot.live"
-    exit
-  end
+def parrotparty
+  system "curl parrot.live"
+  exit
+end
 
-  def self.parrotsay
-    system "parrotsay"
-    exit
-  end
+def parrotsay
+  system "parrotsay"
+  exit
+end
 
-  def self.generateconfig
-    system "sh ~/dotfiles/generate.sh"
-    system "source ~/.zshrc"
-    exit
-  end
+def md(file)
+  system "open -a 'Typora' #{file}"
+  exit
 end
 
 parser = OptionParser.new do |opts|
-  opts.banner = "El Psy Congroo"
+  opts.banner = "Bos Eriko's Helper Commands"
 
   opts.on("--parrot-party", "Party Parrot") do
-    Befr::parrotparty
+    parrotparty
   end
 
   opts.on("--parrot-say", "Parrot Say") do
-    Befr::parrotsay
+    parrotsay
   end
 
-  opts.on("-g", "--generate-config", "Generate .zshrc, .tmux.conf and init.vim") do
-    Befr::generateconfig
+  opts.on("--markdown", "Open markdown") do |file|
+    md(file)
   end
-
-  # opts.on("-H", "--parrot-party", "Party Parrot") do
-    # Befr::parrotdance
-  # end
 end
 
 parser.parse!
